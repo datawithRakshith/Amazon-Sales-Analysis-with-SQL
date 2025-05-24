@@ -29,3 +29,11 @@ This dataset contains sales transactions from three different branches of Amazon
 | gross\_margin\_percentage | Gross margin percentage                 | FLOAT(11, 9)   |
 | gross\_income             | Gross Income                            | DECIMAL(10, 2) |
 | rating                    | Rating                                  | FLOAT(2, 1)    |
+
+
+## 1.Data Wrangling: This is the first step where inspection of data is done to make sure NULL values and missing values are detected and data replacement methods are used to replace missing or NULL values.
+
+### 1.1 Build a database
+
+```sql
+create database project;
