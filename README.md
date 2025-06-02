@@ -433,11 +433,11 @@ where rn=1;
 5. Among male customers, the **Health and Beauty** category generated the most revenue, while for female customers, the **Sports and Travel** category topped in revenue.
 
 ### Sales:
-1.January generated the highest monthly revenue.
-2.February had the lowest monthly revenue.
-3.Naypyitaw was the top-performing branch in terms of revenue.
-4.Mandalay experienced the lowest sales.
-5.Member customers contributed significantly more revenue than normal customers.
+1.January generated the highest monthly revenue. <br>
+2.February had the lowest monthly revenue. <br>
+3.Naypyitaw was the top-performing branch in terms of revenue. <br>
+4.Mandalay experienced the lowest sales. <br>
+5.Member customers contributed significantly more revenue than normal customers. <br>
 6.Female customers were responsible for more revenue than males.
 7.Saturday evenings saw the highest sales.
 8.E-wallet was the most used payment method.
