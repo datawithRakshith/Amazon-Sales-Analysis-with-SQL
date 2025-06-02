@@ -522,7 +522,7 @@ where rn=1;
 * **Use customer feedback data to personalize promotions**, improving satisfaction and driving repeat purchases.
 
 
-### customer Rating sugggestions:
+### Customer Rating sugggestions:
 
 * **Tailor promotional offers based on gender-specific product preferences** to drive more relevant and effective marketing.
 
