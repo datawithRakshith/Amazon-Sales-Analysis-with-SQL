@@ -39,7 +39,7 @@ select * from amazon where city is null;
 
 -- checking null values
 
-SELECT * FROM retail_sales
+SELECT * FROM amazon
 WHERE 
     invoice_id IS NULL
     OR branch IS NULL
@@ -62,7 +62,7 @@ WHERE
     
 -- deleting null values 
 
-delete FROM retail_sales
+delete FROM amazon
 WHERE 
     invoice_id IS NULL
     OR branch IS NULL
