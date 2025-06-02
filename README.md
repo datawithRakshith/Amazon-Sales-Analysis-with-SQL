@@ -417,20 +417,19 @@ select branch, dayname, avg_rating
 from cte
 where rn=1;
 ```
-## Insights:##
-### Product lines:###
+## Insights:
+### Product lines:
 Product lines:
 
 1. There are a total of six product lines in the dataset:  
-   i) Health and Beauty  
-   ii) Electronic Accessories  
-   iii) Home and Lifestyle  
-   iv) Sports and Travel  
-   v) Food and Beverages  
-   vi) Fashion Accessories  
+   i) **Health and Beauty** 
+   ii) **Electronic Accessories**  
+   iii) **Home and Lifestyle**  
+   iv) **Sports and Travel**  
+   v) **Food and Beverages**  
+   vi) **Fashion Accessories**  
 
-2. The Food and Beverages product line generated the highest revenue overall.  
-3. The Health and Beauty product line recorded the lowest revenue and sales volume.  
-4. The Fashion Accessories category had the highest number of sales.  
-5. Among male customers, Health and Beauty had the highest revenue.  
-   Among female customers, Sports and Travel topped in revenue.
+2. The **Food and Beverages** product line generated the highest revenue overall.  
+3. The **Health and Beauty** product line recorded the lowest revenue and sales volume.  
+4. The **Fashion Accessories** category had the highest number of sales.  
+5. Among male customers, the **Health and Beauty** category generated the most revenue, while for female customers, the **Sports and Travel** category topped in revenue.
