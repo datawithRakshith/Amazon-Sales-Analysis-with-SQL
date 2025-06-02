@@ -66,3 +66,51 @@ rating float(2,1)
 ```
 
 ### 1.3 Select columns with null values in them. Delete them as it leads to inaccurate results.
+In table amazon, null values are checked for each column and deleted as it leads to inaccuarate results.
+
+-**Checking null values:** Retrieve all rows from the amazon table where any column contains NULL values using the IS NULL condition.
+```sql
+SELECT * FROM amazon
+WHERE 
+    invoice_id IS NULL
+    OR branch IS NULL
+    OR city IS NULL
+    OR customer_type IS NULL
+    OR gender IS NULL
+    OR product_line IS NULL
+    OR unit_price IS NULL
+    OR quantity IS NULL
+    OR VAT IS NULL
+    OR total IS NULL
+    OR date IS NULL
+    OR time IS NULL
+    OR payment_method IS NULL
+    OR cogs IS NULL
+    OR gross_margin_percentage IS NULL
+    OR gross_income IS NULL
+    OR rating IS NULL;
+```
+
+-**Deleting null values:** Remove all rows from the amazon table where any column contains NULL values by using the DELETE command combined with the IS NULL condition for each relevant column.
+
+```sql
+delete FROM amazon
+WHERE 
+    invoice_id IS NULL
+    OR branch IS NULL
+    OR city IS NULL
+    OR customer_type IS NULL
+    OR gender IS NULL
+    OR product_line IS NULL
+    OR unit_price IS NULL
+    OR quantity IS NULL
+    OR VAT IS NULL
+    OR total IS NULL
+    OR date IS NULL
+    OR time IS NULL
+    OR payment_method IS NULL
+    OR cogs IS NULL
+    OR gross_margin_percentage IS NULL
+    OR gross_income IS NULL
+    OR rating IS NULL;
+```
