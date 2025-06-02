@@ -435,25 +435,40 @@ where rn=1;
 ### **Sales Analysis**
 
 1. The **highest revenue** was recorded in **January**. <br>
+
 2. **February** had the **lowest overall revenue**. <br>
+
 3. **Naypyitaw** emerged as the **top-performing branch** in terms of revenue. <br>
+
 4. **Mandalay** reported the **lowest sales figures** among all branches. <br>
+
 5. **Member customers** contributed **significantly more revenue** compared to normal customers. <br>
+
 6. **Female customers** generated **more revenue** than male customers. <br>
+
 7. **Saturday evenings** showed the **peak in sales activity**.  <br>
+
 8. **E-wallets** were the **most frequently used** payment method. <br>
+
 
 ### **Customer & Time-Based Analysis**
 
 1. **Member customers** and **female shoppers** contributed the highest share of revenue. <br>
+
 2. Among all cities, **Naypyitaw** had the highest earnings, while **Mandalay** had the lowest. <br>
+
 3. **Branch A** saw its highest revenue on **Sundays**, whereas **Branches B and C** peaked on **Saturdays**.  <br>
+
 4. **Afternoons** were the peak time for **Branch B**, while **Branches A and C** had the highest activity during **evenings**.  <br>
+
 5. The **combination of Saturday evenings** and **E-wallet payments** marked the highest sales frequency.  <br>
 
 ### **Customer Rating Insights**
 
 1. **Member customers** consistently yielded **higher revenue**.  <br>
+
 2. **Customer ratings** were highest on **Saturdays** for **Branches B and C**, and on **Sundays** for **Branch A**.  <br>
+
 3. **Afternoons** saw the most ratings for **Branches A and C**, while **evenings** were dominant for **Branch B**. <br>
+
 4. **Male customers** were more active in **Branches A and B**, whereas **females** dominated **Branch C**.  <br>
