@@ -159,3 +159,261 @@ set monthname=monthname(date);
 1. Exploratory Data Analysis is performed to gain insights from the dataset and to address the problem statement and business questions outlined in this project.
 2. The main objective is to analyze sales patterns across different branches, product lines, and customer segments in order to identify key factors that drive revenue and profit.
 3. This analysis will help the business make data-driven decisions related to sales strategies, customer targeting, and inventory planning.
+
+**1. What is the count of distinct cities in the dataset?**
+```sql
+select count(distinct city) as distinct_city from amazon;
+```
+
+**2. For each branch, what is the corresponding city?**
+```sql
+select distinct branch,city from amazon
+order by branch asc;
+```
+
+**3. What is the count of distinct product lines in the dataset?**
+```sql
+select count(distinct product_line) as DistinctProductLine from amazon;
+```
+
+**4. Which payment method occurs most frequently?**
+```sql
+select payment_type,count(payment_type) as CountofPaymentType from amazon
+group by payment_type
+order by countofpaymenttype desc
+limit 1;
+```
+
+**5. Which product line has the highest sales?**
+```sql
+select product_line,count(*) as sales from amazon
+group by product_line
+order by sales desc ;
+```
+
+**6. How much revenue is generated each month?**
+```sql
+select monthname,sum(total) as revenue from amazon 
+group by monthname;
+```
+
+**7. In which month did the cost of goods sold reach its peak?**
+```sql
+select monthname,sum(cogs) as sold from amazon
+group by monthname
+order by sold desc
+limit 1;
+```
+
+**8. Which product line generated the highest revenue?**
+```sql
+select product_line,sum(total) as revenue from amazon
+group by product_line
+order by revenue desc limit 1;
+```
+
+**9. In which city was the highest revenue recorded?**
+```sql
+select city,sum(total) as revenue from amazon
+group by city
+order by revenue desc limit 1;
+```
+
+**10. Which product line incurred the highest Value Added Tax?**
+```sql
+select product_line,sum(vat) as highestVAT
+from amazon
+group by product_line
+order by highestVAT desc limit 1;
+```
+
+**11. For each product line, add a column indicating "Good" if its sales are above average, otherwise "Bad."**
+```sql
+WITH product_line_sales AS (
+    SELECT product_line, SUM(total) AS total_sales
+    FROM amazon
+    GROUP BY product_line
+), 
+avg_sales AS (
+    SELECT AVG(total_sales) AS avg_total_sales 
+    FROM product_line_sales
+) 
+SELECT
+    product_line_sales.product_line, 
+    product_line_sales.total_sales, 
+    CASE 
+        WHEN product_line_sales.total_sales > avg_sales.avg_total_sales THEN 'Good'
+        ELSE 'Bad' 
+    END AS sales_performance 
+FROM product_line_sales, avg_sales;
+```
+
+**12. Identify the branch that exceeded the average number of products sold.**
+```sql
+ with branch_sales as 
+                 (select branch, count(quantity) as quantity_sold from amazon 
+                  group by branch),
+                  
+ avg_branch_sales as 
+                 (select avg(quantity_sold) as avg_quantity_sold 
+                  from branch_sales)
+				
+select branch, quantity_sold 
+from branch_sales, avg_branch_sales
+where quantity_sold>avg_quantity_sold;
+```
+
+**13. Which product line is most frequently associated with each gender?**
+```sql
+with gender_product_quantity as (
+select gender, product_line, count(*) as total_count
+from amazon
+group by gender, product_line
+),
+
+gender_Product_rank as (
+select *, 
+row_number() over(partition by gender order by total_count) as rn
+from gender_product_quantity
+)
+
+select gender, product_line, total_count
+from gender_Product_rank
+where rn=1;
+```
+
+**14. Calculate the average rating for each product line.**
+```sql
+select product_line, avg(rating)
+from amazon
+group by product_line;
+```
+
+**15. Count the sales occurrences for each time of day on every weekday**
+```sql
+SELECT dayname, timeofday, COUNT(*) AS total_transactions
+FROM amazon
+WHERE dayname NOT IN ('Saturday', 'Sunday')
+GROUP BY dayname, timeofday
+order by dayname,timeofday;
+```
+
+**16. Identify the customer type contributing the highest revenue.**
+```sql
+select customer_type, sum(total) as revenue 
+from amazon 
+group by customer_type
+order by revenue desc
+limit 1;
+```
+
+**17. Determine the city with the highest VAT percentage.**
+```sql
+select city, max(round((vat/total),2)) as max_vat
+from amazon
+group by city
+order by max_vat 
+limit 1;
+```
+
+**18. Identify the customer type with the highest VAT payments.**
+```sql
+select customer_type, sum(vat) as vat_payments
+from amazon
+group by customer_type 
+order by vat_payments desc
+limit 1;
+```
+
+**19. What is the count of distinct customer types in the dataset?**
+```sql
+select count(distinct customer_type) as types_of_customers
+from amazon;
+```
+
+**20. What is the count of distinct payment methods in the dataset?**
+```sql
+select count(distinct payment_type) as types_of_payments
+from amazon;
+```
+
+**21. Which customer type occurs most frequently?**
+```sql
+select customer_type, count(*) as frequency
+from amazon
+group by customer_type
+order by frequency desc
+limit 1;
+```
+
+**22. Identify the customer type with the highest purchase frequency.**
+```sql
+SELECT customer_type, COUNT(*) AS purchase_frequency
+FROM amazon
+GROUP BY customer_type
+ORDER BY purchase_frequency DESC
+LIMIT 1;
+```
+
+**23. Determine the predominant gender among customers**
+```sql
+SELECT gender, COUNT(*) AS dominant_gender
+FROM amazon
+GROUP BY gender
+ORDER BY dominant_gender DESC
+LIMIT 1;
+```
+
+**24. Examine the distribution of genders within each branch.**
+```sql
+select branch, gender, count(*) as number_of_sales
+from amazon
+group by branch, gender
+```
+
+**25. Identify the time of day when customers provide the most ratings.**
+```sql
+select timeofday, count(rating) as rating_count
+from amazon
+group by timeofday
+order by rating_count desc
+limit 1;
+```
+
+**26. Determine the time of day with the highest customer ratings for each branch.**
+```sql
+WITH cte AS (
+    SELECT 
+        branch,
+        timeofday,
+        avg(rating) AS avg_rating,
+        ROW_NUMBER() OVER (PARTITION BY branch ORDER BY avg(rating) DESC) AS rn
+    FROM amazon
+    GROUP BY branch, timeofday
+)
+SELECT branch, timeofday, avg_rating
+FROM cte
+WHERE rn = 1;
+```
+
+**27. Identify the day of the week with the highest average ratings.**
+```sql
+select dayname, avg(rating) as avg_rating
+from amazon
+group by dayname
+order by avg_rating desc
+limit 1;
+```
+
+**28. Determine the day of the week with the highest average ratings for each branch.**
+```sql
+with cte as (
+select branch, dayname, avg(rating) as avg_rating,
+row_number() over (partition by branch order by avg(rating) desc) as rn
+from amazon
+group by branch, dayname
+)
+select branch, dayname, avg_rating
+from cte
+where rn=1;
+```
