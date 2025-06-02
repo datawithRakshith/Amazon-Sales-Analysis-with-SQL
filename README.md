@@ -113,3 +113,49 @@ WHERE
     OR gross_income IS NULL
     OR rating IS NULL;
 ```
+
+## 2. Feature Engineering:
+This process allows us to create new columns by deriving them from existing data, helping to enhance the dataset for deeper analysis.
+
+### 2.1 Add Time of Day Column
+A new column named timeofday is added to categorize sales into Morning, Afternoon, and Evening. This helps in identifying which part of the day records the highest number of sales.
+
+```sql
+alter table amazon
+add column timeofday varchar(20);
+
+UPDATE amazon
+SET timeofday = CASE
+    WHEN TIME(time) BETWEEN '10:00:00' AND '12:59:59' THEN 'Morning'
+    WHEN TIME(time) BETWEEN '13:00:00' AND '16:59:59' THEN 'Afternoon'
+    WHEN TIME(time) BETWEEN '17:00:00' AND '20:59:59' THEN 'Evening'
+    ELSE 'Other'
+END;
+```
+
+### 2.2 Add Day Name Column
+A new column named dayname is created to extract the day of the week (e.g., Mon, Tue, Wed, Thu, Fri) on which each transaction occurred. This helps determine which day of the week each branch experiences the highest customer activity.
+
+```sql
+alter table amazon
+add column dayname varchar(15);
+
+update amazon
+set dayname=dayname(date);
+```
+
+### 2.3 Add Month Name Column
+A new column named monthname is added to extract the month (e.g., Jan, Feb, Mar) of each transaction. This helps analyze which month of the year generated the most sales and profit.
+
+```sql
+alter table amazon
+add column monthname varchar(15);
+
+update amazon
+set monthname=monthname(date);
+```
+
+## 3. Exploratory Data Analysis (EDA)
+**Exploratory Data Analysis is performed to gain insights from the dataset and to address the problem statement and business questions outlined in this project.**
+**The main objective is to analyze sales patterns across different branches, product lines, and customer segments in order to identify key factors that drive revenue and profit.**
+**This analysis will help the business make data-driven decisions related to sales strategies, customer targeting, and inventory planning.**
