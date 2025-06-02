@@ -432,19 +432,28 @@ where rn=1;
 4. The **Fashion Accessories** category had the highest number of sales.  
 5. Among male customers, the **Health and Beauty** category generated the most revenue, while for female customers, the **Sports and Travel** category topped in revenue.
 
-### Sales:
-1.January generated the highest monthly revenue. <br>
+### **Sales Analysis**
 
-2.February had the lowest monthly revenue. <br>
+1. The **highest revenue** was recorded in **January**.
+2. **February** had the **lowest overall revenue**.
+3. **Naypyitaw** emerged as the **top-performing branch** in terms of revenue.
+4. **Mandalay** reported the **lowest sales figures** among all branches.
+5. **Member customers** contributed **significantly more revenue** compared to normal customers.
+6. **Female customers** generated **more revenue** than male customers.
+7. **Saturday evenings** showed the **peak in sales activity**.
+8. **E-wallets** were the **most frequently used** payment method.
 
-3.Naypyitaw was the top-performing branch in terms of revenue. <br>
+### **Customer & Time-Based Analysis**
 
-4.Mandalay experienced the lowest sales. <br>
+1. **Member customers** and **female shoppers** contributed the highest share of revenue.
+2. Among all cities, **Naypyitaw** had the highest earnings, while **Mandalay** had the lowest.
+3. **Branch A** saw its highest revenue on **Sundays**, whereas **Branches B and C** peaked on **Saturdays**.
+4. **Afternoons** were the peak time for **Branch B**, while **Branches A and C** had the highest activity during **evenings**.
+5. The **combination of Saturday evenings** and **E-wallet payments** marked the highest sales frequency.
 
-5.Member customers contributed significantly more revenue than normal customers. <br>
+### **Customer Rating Insights**
 
-6.Female customers were responsible for more revenue than males. <br>
-
-7.Saturday evenings saw the highest sales. <br>
-
-8.E-wallet was the most used payment method. <br>
+1. **Member customers** consistently yielded **higher revenue**.
+2. **Customer ratings** were highest on **Saturdays** for **Branches B and C**, and on **Sundays** for **Branch A**.
+3. **Afternoons** saw the most ratings for **Branches A and C**, while **evenings** were dominant for **Branch B**.
+4. **Male customers** were more active in **Branches A and B**, whereas **females** dominated **Branch C**.
