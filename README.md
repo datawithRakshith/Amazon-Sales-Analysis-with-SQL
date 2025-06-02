@@ -156,6 +156,6 @@ set monthname=monthname(date);
 ```
 
 ## 3. Exploratory Data Analysis (EDA)
-**Exploratory Data Analysis is performed to gain insights from the dataset and to address the problem statement and business questions outlined in this project.**
-**The main objective is to analyze sales patterns across different branches, product lines, and customer segments in order to identify key factors that drive revenue and profit.**
-**This analysis will help the business make data-driven decisions related to sales strategies, customer targeting, and inventory planning.**
+1. Exploratory Data Analysis is performed to gain insights from the dataset and to address the problem statement and business questions outlined in this project.
+2. The main objective is to analyze sales patterns across different branches, product lines, and customer segments in order to identify key factors that drive revenue and profit.
+3. This analysis will help the business make data-driven decisions related to sales strategies, customer targeting, and inventory planning.
