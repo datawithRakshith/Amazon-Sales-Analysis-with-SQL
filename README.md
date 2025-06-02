@@ -432,7 +432,7 @@ where rn=1;
 4. The **Fashion Accessories** category had the highest number of sales.  
 5. Among male customers, the **Health and Beauty** category generated the most revenue, while for female customers, the **Sports and Travel** category topped in revenue.
 
-### **Sales Analysis**
+### **Sales Insights:**
 
 1. The **highest revenue** was recorded in **January**. <br>
 
@@ -451,7 +451,7 @@ where rn=1;
 8. **E-wallets** were the **most frequently used** payment method. <br>
 
 
-### **Customer & Time-Based Analysis**
+### **Customer & Time-Based Insights:**
 
 1. **Member customers** and **female shoppers** contributed the highest share of revenue. <br>
 
@@ -463,7 +463,7 @@ where rn=1;
 
 5. The **combination of Saturday evenings** and **E-wallet payments** marked the highest sales frequency.  <br>
 
-### **Customer Rating Insights**
+### **Customer Rating Insights:**
 
 1. **Member customers** consistently yielded **higher revenue**.  <br>
 
@@ -472,3 +472,13 @@ where rn=1;
 3. **Afternoons** saw the most ratings for **Branches A and C**, while **evenings** were dominant for **Branch B**. <br>
 
 4. **Male customers** were more active in **Branches A and B**, whereas **females** dominated **Branch C**.  <br>
+
+## Reccomendations and Suggestions:
+
+### Product lines:
+
+* **Implement targeted marketing campaigns** to increase *Health and Beauty* product sales specifically among male customers.
+* **Promote Food and Beverage items** strategically during peak sales hours to maximize revenue.
+* **Introduce bundle offers** for *Fashion and Accessories* to encourage higher purchase volume.
+* **Provide discounts or limited-time offers** on underperforming product lines to improve their sales performance.
+* **Leverage gender-based customer insights** to deliver personalized product recommendations and improve conversion rates.
