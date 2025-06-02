@@ -65,10 +65,9 @@ rating float(2,1)
 );
 ```
 
-### 1.3 Select columns with null values in them. Delete them as it leads to inaccurate results.
-In table amazon, null values are checked for each column and deleted as it leads to inaccuarate results.
-
--**Checking null values:** Retrieve all rows from the amazon table where any column contains NULL values using the IS NULL condition.
+### 1.3 NULL value check
+In table amazon, check for any null values in the dataset and delete records with missing data.
+**Checking null values:** Retrieve all rows from the amazon table where any column contains NULL values using the IS NULL condition.
 ```sql
 SELECT * FROM amazon
 WHERE 
@@ -91,7 +90,7 @@ WHERE
     OR rating IS NULL;
 ```
 
--**Deleting null values:** Remove all rows from the amazon table where any column contains NULL values by using the DELETE command combined with the IS NULL condition for each relevant column.
+**Deleting null values:** Remove all rows from the amazon table where any column contains NULL values by using the DELETE command combined with the IS NULL condition for each relevant column.
 
 ```sql
 delete FROM amazon
