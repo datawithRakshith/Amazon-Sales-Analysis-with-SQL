@@ -442,6 +442,9 @@ where rn=1;
 4.Mandalay experienced the lowest sales. <br>
 
 5.Member customers contributed significantly more revenue than normal customers. <br>
-6.Female customers were responsible for more revenue than males.
-7.Saturday evenings saw the highest sales.
-8.E-wallet was the most used payment method.
+
+6.Female customers were responsible for more revenue than males. <br>
+
+7.Saturday evenings saw the highest sales. <br>
+
+8.E-wallet was the most used payment method. <br>
