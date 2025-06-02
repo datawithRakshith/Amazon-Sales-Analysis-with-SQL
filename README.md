@@ -418,21 +418,27 @@ from cte
 where rn=1;
 ```
 ## Insights:
+
 ### Product lines:
 1. There are a total of six product lines in the dataset:  
-   i) **Health and Beauty** 
-   ii) **Electronic Accessories**  
-   iii) **Home and Lifestyle**  
-   iv) **Sports and Travel**  
-   v) **Food and Beverages**  
+   i) **Health and Beauty** <br>
+   
+   ii) **Electronic Accessories**
+   
+   iii) **Home and Lifestyle**
+   
+   iv) **Sports and Travel**
+   
+   v) **Food and Beverages**
+   
    vi) **Fashion Accessories**  
 
-2. The **Food and Beverages** product line generated the highest revenue overall.  
-3. The **Health and Beauty** product line recorded the lowest revenue and sales volume.  
-4. The **Fashion Accessories** category had the highest number of sales.  
-5. Among male customers, the **Health and Beauty** category generated the most revenue, while for female customers, the **Sports and Travel** category topped in revenue.
+3. The **Food and Beverages** product line generated the highest revenue overall.  
+4. The **Health and Beauty** product line recorded the lowest revenue and sales volume.  
+5. The **Fashion Accessories** category had the highest number of sales.  
+6. Among male customers, the **Health and Beauty** category generated the most revenue, while for female customers, the **Sports and Travel** category topped in revenue.
 
-### **Sales Insights:**
+### **Sales:**
 
 1. The **highest revenue** was recorded in **January**. <br>
 
@@ -477,8 +483,55 @@ where rn=1;
 
 ### Product lines:
 
-* **Implement targeted marketing campaigns** to increase *Health and Beauty* product sales specifically among male customers.
+* **Implement targeted marketing campaigns** to increase ***Health and Beauty*** product sales specifically among male customers.
+
 * **Promote Food and Beverage items** strategically during peak sales hours to maximize revenue.
-* **Introduce bundle offers** for *Fashion and Accessories* to encourage higher purchase volume.
+
+* **Introduce bundle offers** for ***Fashion and Accessories*** to encourage higher purchase volume.
+
 * **Provide discounts or limited-time offers** on underperforming product lines to improve their sales performance.
+
 * **Leverage gender-based customer insights** to deliver personalized product recommendations and improve conversion rates.
+
+
+### Sales:
+
+* **Introduce regional promotions** in Mandalay and Yangon to help balance sales performance across all branches.
+
+* **Encourage cross-branch collaboration** by assigning experienced staff from Branch A to mentor and train teams in other branches, sharing effective sales strategies.
+
+* **Launch special campaigns during January** to capitalize on historically high revenue trends and maximize sales opportunities.
+
+* **Offer exclusive discounts to normal (non-member) customers** to boost their engagement and drive more purchases.
+
+* **Provide additional coupon incentives for E-Wallet users** to further increase digital transactions and overall revenue.
+
+
+### Customer and Time based suggestions:
+
+* **Implement retention programs** for member customers by offering promotional products or exclusive rewards to enhance loyalty.
+
+* **Introduce special offers on weekdays** to boost traffic during slower business days.
+
+* **Distribute promotional items during morning hours** to encourage early footfall and increase morning sales.
+
+* **Run targeted campaigns during each branch’s peak hours** to maximize customer engagement and sales impact.
+
+* **Offer exclusive perks or cashback incentives for E-Wallet transactions** to further promote digital payment usage.
+
+* **Use customer feedback data to personalize promotions**, improving satisfaction and driving repeat purchases.
+
+
+### customer Rating sugggestions:
+
+* **Tailor promotional offers based on gender-specific product preferences** to drive more relevant and effective marketing.
+
+* **Strengthen customer service efforts during high-rating time slots** to maintain and improve satisfaction.
+
+* **Actively encourage customers to leave feedback during afternoons**, when engagement levels are typically higher.
+
+* **Leverage branch-wise gender trends** to create targeted acquisition strategies for different customer segments.
+
+* **Provide incentives for customers who regularly leave reviews**, to build a strong base of reliable feedback.
+
+* **Analyze rating patterns to identify service gaps and opportunities** for improving customer experience across branches.
