@@ -434,9 +434,13 @@ where rn=1;
 
 ### Sales:
 1.January generated the highest monthly revenue. <br>
+
 2.February had the lowest monthly revenue. <br>
+
 3.Naypyitaw was the top-performing branch in terms of revenue. <br>
+
 4.Mandalay experienced the lowest sales. <br>
+
 5.Member customers contributed significantly more revenue than normal customers. <br>
 6.Female customers were responsible for more revenue than males.
 7.Saturday evenings saw the highest sales.
